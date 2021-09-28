@@ -372,12 +372,16 @@ header {
 header a {
   color: var(--red);
 }
-header img{
+header img {
     vertical-align: middle;
     height: 100%;
     padding: 0 0 0 0;
-    float:right;
+    float: right;
     content: url('./themes/img/logo_unibe.svg');
+  }
+header img[alt~="center"] {
+    display: block;
+    margin: 0 auto;
   }
 
 section {
@@ -393,6 +397,7 @@ section {
   justify-content: top;
   padding: 78.5px;
   width: 1280px;
+  justify-content: flex-start;
 
   > *:last-child,
   &[data-footer] > :nth-last-child(2) {

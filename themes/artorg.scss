@@ -329,6 +329,8 @@ header {
   left: 0;
   right: 0;
   top: 0;
+  width:110%;
+  margin-left:-20px;
 }
 
 footer {
@@ -372,12 +374,16 @@ header {
 header a {
   color: var(--orange);
 }
-header img{
+header img {
     vertical-align: middle;
     height: 95%;
     padding: 1.5%;
-    float:right;
+    float: right;
     content: url('./themes/img/logo_artorg.svg');
+  }
+header img[alt~="center"] {
+    display: block;
+    margin: 0 auto;
   }
 
 section {
@@ -393,6 +399,7 @@ section {
   justify-content: top;
   padding: 78.5px;
   width: 1280px;
+  justify-content: flex-start;
 
   > *:last-child,
   &[data-footer] > :nth-last-child(2) {
