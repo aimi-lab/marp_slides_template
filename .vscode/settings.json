@@ -6,5 +6,6 @@
       "./themes/uncover.scss",
       "./themes/unibe.scss",
       "./themes/artorg.scss",
-    ]
+    ],
+    "markdown.marp.enableHtml" : true
   }
