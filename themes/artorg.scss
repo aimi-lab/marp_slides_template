@@ -141,22 +141,27 @@ h6 strong {
   font-weight: inherit;
 }
 
+hr {
+  height: 0;
+  padding-top: 0.25em;
+}
+
 h1 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: var(--orange);
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: var(--orange);
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 h4 {
-  font-size: 1.1em;
+  font-size: 1.05em;
 }
 
 h5 {
@@ -211,31 +216,21 @@ pre code svg[data-marp-fitting=svg] {
 }
   
 blockquote {
-    margin: 1em 0 0 0;
-    padding: 0 1em;
-    position: relative;
-    color: var(--orange);
-}
-blockquote::after, blockquote::before {
-    content: "“";
-    display: block;
-    font-family: sans-serif;
-    font-weight: bold;
-    position: absolute;
-    color: var(--orange);
+  margin: 0 10 0 0;
+  padding: 0 1em;
+  border-left: 1px solid #999;
+  border-width: 0.2em;
+  color: var(--foreground);
 }
 blockquote::before {
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
 }
 blockquote::after {
-    right: 0;
-    bottom: 0;
-    transform: rotate(180deg);
+  right: 0;
+  bottom: 0;
+  transform: rotate(180deg);
 }
-blockquote > *:first-child {
-    margin-top: 0;
-}  
 
 mark {
   background: transparent;
@@ -329,8 +324,6 @@ header {
   left: 0;
   right: 0;
   top: 0;
-  width:110%;
-  margin-left:-20px;
 }
 
 footer {
@@ -346,6 +339,25 @@ section::after {
 }
 
 /* custom */
+
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+img[alt~="right"] {
+  display: block;
+  float: right;
+  margin-right: 0em;
+}
+img[alt~="middle"] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 footer {
   width: 100%;
   height: 5%;
@@ -374,16 +386,12 @@ header {
 header a {
   color: var(--orange);
 }
-header img {
+header img{
     vertical-align: middle;
     height: 95%;
     padding: 1.5%;
     float: right;
     content: url('./themes/img/logo_artorg.svg');
-  }
-header img[alt~="center"] {
-    display: block;
-    margin: 0 auto;
   }
 
 section {
@@ -399,7 +407,6 @@ section {
   justify-content: top;
   padding: 78.5px;
   width: 1280px;
-  justify-content: flex-start;
 
   > *:last-child,
   &[data-footer] > :nth-last-child(2) {
