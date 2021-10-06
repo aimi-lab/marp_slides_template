@@ -1,5 +1,6 @@
-// Marpit themes
+
 {
+    // Marpit themes
     "markdown.marp.themes": [
       "./themes/default.scss",
       "./themes/gaia.scss",
@@ -7,5 +8,8 @@
       "./themes/unibe.scss",
       "./themes/artorg.scss",
     ],
-    "markdown.marp.enableHtml" : true
-  }
+    // enable HTML rendering
+    "markdown.marp.enableHtml" : true,
+    // set HTML as default export type
+    "markdown.marp.exportType": "html",
+}
