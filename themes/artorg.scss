@@ -4,16 +4,17 @@
  * @theme artorg
  * @author Christopher Hahne
  *
- * @auto-scaling true
+ * @auto-scaling fittingHeader,math
  * @size 4:3 960px 720px
  * @size 16:9 1280px 720px
+ * @size 4K 3840px 2160px
  */
 
-/* 
+/*
 @import 'default';
+*/
 @import '~github-markdown-css';
 @import '~highlight.js/styles/github-gist';
-*/
 
 @import url("https://fonts.googleapis.com/css?family=Lato:400,900|IBM+Plex+Sans:400,700");
 
@@ -190,7 +191,7 @@ ol > li > p {
 code {
   display: inline-block;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.8em;
+  font-size: 62.5%;
   letter-spacing: 0;
   margin: -0.1em 0.15em;
   padding: 0.1em 0.2em;
@@ -209,7 +210,6 @@ pre code {
     margin: 0;
     min-width: 100%;
     padding: 0.5em;
-    font-size: 0.7em;
 }
 pre code svg[data-marp-fitting=svg] {
     max-height: calc(580px - 1em);
