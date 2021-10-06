@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: artorg
-size: 4K
+size: 16:9
 paginate: true
 footer: ''
 header: '![logo]() [&#9635;](#1, " ") &nbsp; Title'
@@ -69,3 +69,51 @@ Table - https://www.tablesgenerator.com/markdown_tables
 an emoji compilation for markdown is found below
 
 https://gist.github.com/rxaviers/7360908
+
+---
+
+## HTML/CSS flavour
+
+<style scoped>
+  p, ul, li, blockquote{
+    font-size: 78%;
+  }
+</style>
+
+<style scoped>
+  header img {
+    display:none;
+  }
+</style>
+
+<style scoped>
+    section {
+        display: block;
+    }
+    table {
+        width: max-content;
+        float: right;
+    }
+</style>
+
+<br>
+
+##### remove header image on this slide:
+```html
+<style scoped>
+  header img {
+    display:none;
+  }
+</style>
+```
+
+<br>
+
+##### set font-size for this slide:
+```html
+<style scoped>
+  p, ul, li, blockquote, code{
+    font-size: 78%;
+  }
+</style>
+```
