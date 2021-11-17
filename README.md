@@ -32,7 +32,7 @@ npm install --save-dev @marp-team/marp-cli
 
 3. convert file
 ```
-npx @marp-team/marp-cli ./your.md --pdf --allow-local-files
-npx @marp-team/marp-cli ./your.md --html
+npx @marp-team/marp-cli ./your.md --pdf --allow-local-files --theme-set ./themes
+npx @marp-team/marp-cli ./your.md --html --theme-set ./themes
 npx @marp-team/marp-cli ./your.md --pptx
 ```
