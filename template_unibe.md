@@ -4,16 +4,19 @@ theme: unibe
 size: 16:9
 paginate: true
 footer: ''
-header: '![logo]() [&#9635;](#1, " ") &nbsp; Title'
+header: '![ ]() [&#9635;](#1,"")'
 ---
 
 # Headline
 ### Author(s)
 Location, Date
 
-<!-- centered headline only on front slide -->
+<!-- deckslide only style -->
 <style scoped>
-  section{justify-content: center;}
+  /* centered headline */
+  section {justify-content: center;}
+  /* display header image */
+  header img {display: block;}
 </style>
 
 ---
@@ -82,7 +85,7 @@ https://gist.github.com/rxaviers/7360908
 
 <style scoped>
   header img {
-    display:none;
+    display: block;
   }
 </style>
 
@@ -98,11 +101,11 @@ https://gist.github.com/rxaviers/7360908
 
 <br>
 
-##### remove header image on this slide:
+##### add header image on this slide:
 ```html
 <style scoped>
   header img {
-    display:none;
+    display: block;
   }
 </style>
 ```
