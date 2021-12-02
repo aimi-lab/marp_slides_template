@@ -5,8 +5,8 @@
       "./themes/default.scss",
       "./themes/gaia.scss",
       "./themes/uncover.scss",
-      "./themes/unibe.scss",
-      "./themes/artorg.scss",
+      "./themes/unibe.css",
+      "./themes/artorg.css",
     ],
     // enable HTML rendering
     "markdown.marp.enableHtml" : true,
