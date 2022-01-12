@@ -32,7 +32,7 @@ npm install --save-dev @marp-team/marp-cli
 
 3. convert file
 ```
-npx @marp-team/marp-cli ./your.md --pdf --allow-local-files --theme-set ./themes/
-npx @marp-team/marp-cli ./your.md --html --theme ./themes/artorg.scss
-npx @marp-team/marp-cli ./your.md --pptx
+npx @marp-team/marp-cli ./template_unibe.md --pdf --allow-local-files --theme-set ./themes/
+npx @marp-team/marp-cli ./template_unibe.md --html --theme ./themes/artorg.css
+npx @marp-team/marp-cli ./template_unibe.md --pptx --theme-set ./themes/
 ```
