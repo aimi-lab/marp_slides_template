@@ -21,7 +21,7 @@ CLI Slide Export
 ----------------
 
 
-1. install node.js from https://nodejs.org/en/download/ and verify it was successful
+1. install node.js from https://nodejs.org/en/download/ and make sure it was successful
 ```
 $ node --version
 ```
@@ -33,7 +33,7 @@ $ npm install --save-dev @marp-team/marp-cli
 
 3. convert file
 ```
-$ npx @marp-team/marp-cli ./template_hahnec.md --pdf --allow-local-files --theme-set ./themes/
+$ npx @marp-team/marp-cli ./template_hahnec.md --html --pdf --allow-local-files --theme-set ./themes/
 $ npx @marp-team/marp-cli ./template_hahnec.md --html --theme ./themes/hahnec.css
 $ npx @marp-team/marp-cli ./template_hahnec.md --pptx --theme-set ./themes/
 ```
