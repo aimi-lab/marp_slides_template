@@ -4,7 +4,7 @@ theme: unibe
 size: 16:9
 paginate: true
 footer: ''
-header: '![ ]() [&#9635;](#1,"")'
+header: '![ ]() [&#9635;](#1 "")'
 ---
 
 # Headline
